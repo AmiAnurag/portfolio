@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anurag Nayak | AI Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            neon: '#38bdf8'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glow {
+      box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 bg-gray-800 shadow-lg z-50 p-4 px-8 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-neon">Anurag Nayak</h1>
+    <nav class="space-x-4 text-sm font-medium">
+      <a href="#about" class="hover:text-neon">About</a>
+      <a href="#skills" class="hover:text-neon">Skills</a>
+      <a href="#projects" class="hover:text-neon">Projects</a>
+      <a href="#experience" class="hover:text-neon">Experience</a>
+      <a href="#intern-experience" class="hover:text-neon">Internships</a>
+      <a href="#certifications" class="hover:text-neon">Certifications</a>
+      <a href="#contact" class="hover:text-neon">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center p-6 pt-24">
+    <h2 class="text-4xl md:text-5xl font-bold text-neon mb-4 fade-in">Hi, I'm Anurag</h2>
+    <p class="text-lg max-w-2xl fade-in delay-100">
+      A passionate engineer building intelligent systems with LLMs, NLP, and Quantum ML.
+    </p>
+    <a href="/Anurag_Nayak Resume(1).PDF" download class="mt-6 inline-block bg-neon text-gray-900 font-bold py-2 px-6 rounded-full glow hover:scale-105 transition">
+      Download Resume
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto p-6 mt-12 fade-in">
+    <h2 class="text-2xl font-bold text-neon mb-2">About Me</h2>
+    <p>
+      Software engineer with a strong foundation in AI, data science, and system design. Currently building LLM-powered tools at Infosys. I love turning complex problems into elegant solutions using cutting-edge tech.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="p-6 mt-12 bg-gray-800 fade-in">
+    <h2 class="text-2xl font-bold text-neon mb-4">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+      <div>🛠 Python, C++</div>
+      <div>⚙ Flask, FastAPI, TensorFlow</div>
+      <div>📊 Pandas, Numpy, Sklearn</div>
+      <div>💾 MySQL, MongoDB</div>
+      <div>🧠 NLP, LLMs, Generative AI</div>
+      <div>🧪 Quantum Machine Learning</div>
+      <div>📐 DSA, Benchmarking, SOLID</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="p-6 mt-12 max-w-5xl mx-auto fade-in">
+    <h2 class="text-2xl font-bold text-neon mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-4 rounded-xl glow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">Resume Analyzer & Virtual Interview</h3>
+        <p>LangChain, Transformers, Streamlit</p>
+        <p class="text-sm mt-2">Analyzes resumes, performs semantic search, and simulates a mock interview using LLMs.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-xl glow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">AutoML Insights Platform</h3>
+        <p>Flask, Pandas, Sklearn</p>
+        <p class="text-sm mt-2">Uploads CSVs, performs EDA and preprocessing, and recommends ML models.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-xl glow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">Cancer Detection (Research)</h3>
+        <p>TensorFlow, ResNet50</p>
+        <p class="text-sm mt-2">Used transfer learning & optimization to detect colorectal cancer from histopathology images.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="p-6 mt-12 bg-gray-800 fade-in">
+    <h2 class="text-2xl font-bold text-neon mb-4">Experience</h2>
+    <h3 class="text-lg font-semibold">Infosys Ltd. – Specialist Programmer (Nov 2024 - Present)</h3>
+    <ul class="list-disc list-inside mt-2 text-sm">
+      <li>Developing LLM-powered tools for legacy modernization using LangChain and prompts.</li>
+      <li>Auto-generating COBOL refactors using generative AI for enterprise-grade apps.</li>
+    </ul>
+  </section>
+
+<section id="intern-experience" class="p-6 mt-12 bg-gray-800 fade-in"> <h2 class="text-2xl font-bold text-neon mb-4">Internship Experience</h2>
+
+<h3 class="text-lg font-semibold mt-6">Project Assistant – Indian Institute of Technology, Kharagpur (Jul 2024 - Sep 2024)</h3> <ul class="list-disc list-inside mt-2 text-sm"> <li>Worked on Embedded Systems and Embedded C projects.</li> <li>Applied hands-on experience with hardware and software integration.</li> </ul>
+
+<h3 class="text-lg font-semibold mt-6">Research Intern – Jadavpur University (Dec 2021 - Dec 2022)</h3> <ul class="list-disc list-inside mt-2 text-sm"> <li>Explored Data Science applications using Python.</li> <li>Focused on advanced research methodologies and AI-driven analytics.</li> </ul>
+
+<h3 class="text-lg font-semibold mt-6">Research Intern – National Institute of Technology Silchar (Dec 2021 - Apr 2022)</h3> <ul class="list-disc list-inside mt-2 text-sm"> <li>Part of the Satyendranath Bose Winter Internship Program.</li> <li>Researched Quantum Machine Learning applications in AI systems.</li> </ul> </section>
+
+<section id="certifications" class="p-6 max-w-4xl mx-auto mt-10">
+  <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Certifications</h2>
+  <div class="relative border-l border-gray-300 dark:border-gray-600 ml-4">
+
+    <!-- Timeline Item -->
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Hypothesis Testing</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">upGrad • Sep 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Intro to Financial Markets</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Coursera • Sep 2021</p>
+      <a href="https://coursera.org/verify/M67LPGTWU9G8" class="text-sm text-blue-600 dark:text-blue-400 underline">View Credential</a>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">AI APPRECIATE</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Intel • Aug 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">AI Aware 2021</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Intel • Aug 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Software Engineering Virtual Experience</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">JPMorgan Chase • Aug 2021</p>
+      <p class="text-sm text-gray-400">Credential ID: LsFiVexL2oxxwmfQR</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Data Science Training</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Internshala • Jul 2021</p>
+      <p class="text-sm text-gray-400">ID: 1775818D-4329-637B-23E6-874C6E80F3B9</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Python 101 for Data Science</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">IBM • Jun 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Intro to Data Studio</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Google • Sep 2021 (Expired Aug 2024)</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Google Cloud Program</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Google Cloud Education • 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-10">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Google Cloud Training Online</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Google Cloud • 2021</p>
+    </div>
+
+    <div class="relative pl-6 mb-2">
+      <span class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1.5"></span>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Statistical Inference</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Johns Hopkins University</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="p-6 max-w-4xl mx-auto mt-12 mb-20 fade-in">
+    <h2 class="text-2xl font-bold text-neon mb-4">Get in Touch</h2>
+    <p>Email: <a href="mailto:anurag14200314@gmai.com" class="text-neon underline">anurag14200314@gmai.com</a></p>
+    <div class="flex flex-wrap gap-4 mt-4 text-neon text-sm">
+      <a href="http://github.com/amianurag" class="underline">GitHub</a>
+      <a href="http://linkedin.com/in/amianurag" class="underline">LinkedIn</a>
+      <a href="https://leetcode.com/u/anurag14200314/" class="underline">LeetCode</a>
+      <a href="https://www.kaggle.com/anuragnayak03" class="underline">Kaggle</a>
+      <a href="https://x.com/AnuragN46823006?t=TkrtW0uGrEuokz2FFF3JOg&s=09" class="underline">Twitter</a>
+    </div>
+  </section>
+
+</body>
+</html>
